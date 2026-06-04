@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jurnit — Leave a trace. Build your story.</title>
+  <meta name="description" content="Jurnit turns every street into a living map of memories. Leave traces, discover what others left behind, and link them into journeys." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+  <div class="progress" id="progress"></div>
+
+  <!-- ===== nav ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo" aria-label="Jurnit">
+        <span class="logo__dots"><i></i><i></i><i></i></span>
+        <span class="logo__word">Jurnit</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#homepage">The map</a>
+        <a href="#reactions">Community</a>
+        <a href="#journey">Journeys</a>
+      </nav>
+      <a href="#waitlist" class="btn btn--dark nav__cta">Join the waitlist</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== hero ===== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="logo__dots logo__dots--lg reveal"><i></i><i></i><i></i></span>
+        <h1 class="reveal" data-d="60">Leave a trace.<br>Build your story.</h1>
+        <p class="lead reveal" data-d="120">Jurnit turns every street into a living map of memories — drop notes, photos and audio where they happened, then link the moments into journeys worth walking.</p>
+        <form class="waitform reveal" id="heroForm" data-d="180" novalidate>
+          <input type="email" name="email" class="waitform__input" placeholder="you@email.com" aria-label="Email" required />
+          <button class="btn btn--dark" type="submit">Join the waitlist</button>
+        </form>
+        <p class="hero__note reveal" data-d="240"><strong id="counter" data-target="2480">0</strong> explorers already on the list</p>
+      </div>
+    </section>
+
+    <!-- ===== app scenes (your real screens, presented seamlessly) ===== -->
+    <section class="scenes">
+      <figure class="scene reveal" id="homepage">
+        <img src="assets/homepage.png" alt="As you leave traces, the map unfolds into your unique story" style="max-width:1040px">
+      </figure>
+      <figure class="scene reveal" id="details">
+        <img src="assets/trace-details.png" alt="Notes, photos and audio — pinned exactly where they happened" style="max-width:880px">
+      </figure>
+      <figure class="scene reveal" id="reactions">
+        <img src="assets/trace-reactions.png" alt="Unlock a community memory of each single spot" style="max-width:1140px">
+      </figure>
+      <figure class="scene reveal" id="mission">
+        <img src="assets/mission.png" alt="Move through the fog, unlock the traces and collect memories" style="max-width:1140px">
+      </figure>
+      <figure class="scene reveal" id="journey">
+        <img src="assets/journey.png" alt="Select the traces, link them together and build the journey" style="max-width:1140px">
+      </figure>
+    </section>
+
+    <!-- ===== waitlist ===== -->
+    <section class="cta" id="waitlist">
+      <div class="container cta__inner reveal">
+        <span class="logo__dots logo__dots--lg"><i></i><i></i><i></i></span>
+        <h2>Be among the first<br>to leave a trace</h2>
+        <p class="lead">Join the waitlist and we'll hand you early access the moment Jurnit reaches your city.</p>
+        <form class="waitform" id="ctaForm" novalidate>
+          <input type="email" name="email" class="waitform__input" placeholder="you@email.com" aria-label="Email" required />
+          <button class="btn btn--dark" type="submit">Request early access</button>
+        </form>
+        <p class="cta__fine">No spam. One email when it's your turn.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo__dots logo__dots--lg"><i></i><i></i><i></i></span>
+      <nav class="footer__links">
+        <a href="#homepage">The map</a>
+        <a href="#reactions">Community</a>
+        <a href="#journey">Journeys</a>
+        <a href="mailto:hello@jurnit.app">Contact</a>
+      </nav>
+      <span class="footer__copy">© 2026 Jurnit — Leave a trace. Build your story.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
