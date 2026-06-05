@@ -59,9 +59,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero .lead{margin-bottom:32px}
 .hero__note{margin-top:28px;font-size:14px;color:var(--soft)}
 .hero__note strong{color:var(--ink)}
-.trust{margin-top:36px;display:flex;flex-direction:column;align-items:center;gap:20px}
+.trust{margin-top:36px;display:flex;align-items:center;justify-content:center;gap:20px}
 .trust__label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.trust__logos{display:flex;align-items:center;justify-content:center;gap:36px}
+.trust__logos{display:flex;align-items:center;gap:20px}
 .trust__logo{height:28px;width:auto}
 
 .waitform{display:flex;gap:7px;background:#fff;padding:7px;border-radius:100px;
